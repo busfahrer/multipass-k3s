@@ -9,4 +9,4 @@ do
   multipass delete node$i
 done
 
-echo Done.
+echo REMEMBER TO PURGE
