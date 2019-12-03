@@ -1,6 +1,7 @@
 #!/bin/sh
 
-COUNT=3
+COUNT=${1:-3}
+echo Using count of $COUNT
 
 multipass launch --name node1
 multipass exec node1 -- sh -c "curl -sfL https://get.k3s.io | sh -"
